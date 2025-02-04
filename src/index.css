@@ -1,2 +1,20 @@
+/* // <weight>: Use a value from 400 to 900 */
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+
+@theme {
+    /* --font-display: "Tektur", serif; */
+    /* --font-primary: "Tektur", serif; */
+    /* how to use className="font-primary" */
+    /* ... */
+  }
+
+
+
+*{
+    font-family: "Tektur", serif;
+}

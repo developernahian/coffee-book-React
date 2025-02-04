@@ -12,7 +12,7 @@ const MainLayout = () => {
             {/* <div className="min-h-screen"> */}
             {/* nav h= 65px, footer=164px, 100vh-(nav+footer) */}
             {/* [=] footer */}
-            <div className="min-h-[calc(100vh-232px)]">
+            <div className="min-h-[calc(100vh-232px)] py-12 container px-12 mx-auto">
                 <Outlet></Outlet>
             </div>
             {/* Footer */}
