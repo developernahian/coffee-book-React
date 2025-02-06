@@ -21,6 +21,14 @@ const routes = createBrowserRouter([
           {
             // path: '/category/:nahian', //in coffeeCards.jsx file--> const obj = useParams() //and console.log(obj); -> output: {nahian: 'Dessert Coffee'}
             // // if with distructure const {obj} = useParams() // and console.log(obj); -> output : Dessert Coffee
+            path: '/',
+            element: <CoffeeCards></CoffeeCards>,
+            // If the user visits /category/Black Coffee, the value of category will be "Black Coffee".
+            loader: () => fetch('../coffees.json'),
+          },
+          {
+            // path: '/category/:nahian', //in coffeeCards.jsx file--> const obj = useParams() //and console.log(obj); -> output: {nahian: 'Dessert Coffee'}
+            // // if with distructure const {obj} = useParams() // and console.log(obj); -> output : Dessert Coffee
             path: '/category/:category',
             element: <CoffeeCards></CoffeeCards>,
             // If the user visits /category/Black Coffee, the value of category will be "Black Coffee".
