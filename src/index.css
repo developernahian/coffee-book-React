@@ -18,3 +18,8 @@
 *{
     font-family: "Tektur", serif;
 }
+
+/* [=] scroll er jaiga age theke niye rakhe... */
+html{
+  overflow-y: scroll;
+}

@@ -4,6 +4,7 @@ import Home from "../pages/Home"
 import Dashboard from "../pages/Dashboard"
 import Coffees from "../pages/Coffees"
 import CoffeeCards from "../components/CoffeeCards"
+import CoffeeDetails from "../pages/CoffeeDetails"
 
 const routes = createBrowserRouter([
   {
@@ -33,17 +34,23 @@ const routes = createBrowserRouter([
             element: <CoffeeCards></CoffeeCards>,
             // If the user visits /category/Black Coffee, the value of category will be "Black Coffee".
             loader: () => fetch('../coffees.json'),
-          }
+          },
         ],
       },
       {
         path: '/coffees',
         element: <Coffees></Coffees>,
+        loader: () => fetch('../coffees.json'),
       },
 
       {
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: '/coffee/:id',
+        element: <CoffeeDetails></CoffeeDetails>,
+        loader: () => fetch('../coffees.json'),
       }
 
     ],

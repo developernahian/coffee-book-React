@@ -34,6 +34,7 @@ const CoffeeCards = () => {
                 }
             </div>
 
+                {/* [+] navigate */}
             <button className="btn btn-warning" onClick={()=> navigate('/coffees')}>View All</button>
         </>
     );
